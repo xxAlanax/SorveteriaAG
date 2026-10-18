@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&G Sorveteria</title>
+    <link rel="icon" type="imagem/png" href="../imagens/Logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <img class="logo" src="../imagens/Logo.png" alt="logo da A&G sorveteria">
+        
+        <nav class="navegacao">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="aba_pedido">
+        <section class="pedido">
+            <h1>Detalhes do pedido</h1>
+
+            <div id="itens_pedido"></div>
+
+            <form class="pedido">
+
+                <label for="cupom">Cupons de desconto:</label>
+                <input id="cupom" name="cupom" type="text" placeholder="Digite o cupom de desconto">
+
+                <fieldset>
+                    <legend>Forma de pagamento</legend>
+                    <label><input id="pix" value="pix" name="pagamento" type="radio" required> Pix </label>
+                    <label><input id="cartao" value="catao" name="pagamento" type="radio"> Cartão </label>
+                    <label><input id="dinheiro" value="dinheiro" name="pagamento" type="radio"> Dinheiro </label>
+                </fieldset>
+                
+                <button type="submit">Finalizar Pedido</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer class="rodape">
+        <img class="logo" src="../imagens/Logo.png" alt="logo da A%G sorveteria">
+
+        <section>
+            <h2>Localização</h2>
+            <p>Rua: Suenia de Melo - 43</p>
+            <p>Bairro: Diniz</p>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <p>Telefone: 1111-1111</p>
+            <p>Email: a&g@sorveteria.com</p>
+        </section>
+
+        <a class="botao" href="Trabalhe.html">Trabalhe Conosco</a>
+    </footer>
+</body>
+</html>
