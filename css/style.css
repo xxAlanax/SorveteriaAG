@@ -415,7 +415,7 @@ input:focus, button:focus, a:focus {
     font-size: 2em;
 }
 
-.finalizar{
+.continuar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -423,7 +423,7 @@ input:focus, button:focus, a:focus {
 
 }
 
-.finalizar a{
+.continuar a{
     width: 20%;
     text-align: center;
 }
@@ -470,3 +470,59 @@ input:focus, button:focus, a:focus {
     font-size: 1.5rem;
 }
 
+/* Pedido */
+
+.aba_pedido {
+    height: 100vh;
+    border-radius: 10px;
+    background-color: var(--cor-background);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.finalizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid var(--cor-detalhes);
+}
+
+.finalizar form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.finalizar fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.cupom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cupom label{
+    font-weight: bold;
+}
+
+.cupom input{
+    display: flex;
+    min-width: 0;
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}

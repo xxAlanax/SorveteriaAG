@@ -29,20 +29,32 @@
 
             <div id="itens_pedido"></div>
 
-            <form class="pedido">
+            
 
-                <label for="cupom">Cupons de desconto:</label>
-                <input id="cupom" name="cupom" type="text" placeholder="Digite o cupom de desconto">
+            <div class="finalizar">
+                <div class="valor">
+                    <h2>Total:<span id="total">R$ 0,00</span></h2>
+                </div>
 
-                <fieldset>
-                    <legend>Forma de pagamento</legend>
-                    <label><input id="pix" value="pix" name="pagamento" type="radio" required> Pix </label>
-                    <label><input id="cartao" value="catao" name="pagamento" type="radio"> Cartão </label>
-                    <label><input id="dinheiro" value="dinheiro" name="pagamento" type="radio"> Dinheiro </label>
-                </fieldset>
-                
-                <button type="submit">Finalizar Pedido</button>
-            </form>
+                <div>
+                    <form class="pedido">
+
+                        <div class="cupom">
+                            <label for="cupom">Cupons de desconto:</label>
+                            <input id="cupom" name="cupom" type="text" placeholder="Cupom de desconto">
+                        </div>
+
+                        <fieldset>
+                            <legend>Forma de pagamento:</legend>
+                            <label><input id="pix" value="pix" name="pagamento" type="radio" required> Pix </label>
+                            <label><input id="cartao" value="catao" name="pagamento" type="radio"> Cartão </label>
+                            <label><input id="dinheiro" value="dinheiro" name="pagamento" type="radio"> Dinheiro </label>
+                        </fieldset>
+                        
+                        <button type="submit" class="botao">Finalizar Pedido</button>
+                    </form>
+                </div>
+            </div>
         </section>
         
     </main>
