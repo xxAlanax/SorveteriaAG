@@ -6,6 +6,7 @@
     <title>A&G Sorveteria</title>
     <link rel="icon" type="imagem/png" href="../imagens/Logo.png">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <header class="cabecalho">
@@ -26,7 +27,7 @@
     <main class="aba_cadastro">
         <section class="cadastro">
             <h1>Criar conta</h1>
-            <form class="fazer_cadastro">
+            <form class="fazer_cadastro" id="form_cadastro">
                 <fieldset>
                     <legend>Dados pessoais</legend>
                 
@@ -40,8 +41,8 @@
                     <input id="senha" name="senha" type="password" placeholder="Crie uma senha" minlength="4" required>
 
                     <label for="confirma">Confirme a senha:</label>
-                    <input id="confima" name="confirma" type="password" placeholder="Confirme a senha" minlength="4" required>
-
+                    <input id="confirma" name="confirma" type="password" placeholder="Confirme a senha" minlength="4" required>
+                    <div id="erro" class="mensagem_erro"></div>
                 </fieldset>
                 <button type="submit" class="botao">Criar conta</button>
                 
@@ -71,5 +72,7 @@
 
         <a class="botao" href="Trabalhe.html">Trabalhe Conosco</a>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

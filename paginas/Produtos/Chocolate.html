@@ -44,7 +44,7 @@
                 <form class="compra">
                     <label for="quantidade">Quantidade:</label>
                     <input id="quantidade" name="quantidade" type="number" value="1" min="1" max="100" required>
-                    <button type="button" class="botao">Adicionar ao carrinho</button>
+                    <button type="button" class="botao" id="adicionar-carrinho" data-id="chocolate" data-nome="Sorvete de Chocolate" data-preco="14.90" data-imagem="../imagens/chocolate.png">Adicionar ao carrinho</button>
                 </form>
             </div>
         </section>
@@ -67,5 +67,10 @@
 
         <a class="botao" href="../Trabalhe.html">Trabalhe Conosco</a>
     </footer>
+
+    <div id="mensagem-carrinho">
+        Produto adicionado ao carrinho!
+    </div>
+    <script src="../../js/script.js"></script>
 </body>
 </html>

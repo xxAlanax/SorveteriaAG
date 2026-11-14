@@ -7,7 +7,6 @@
     <link rel="icon" type="imagem/png" href="../../imagens/Logo.png">
     <link rel="stylesheet" href="../../css/style.css">
 
-
 </head>
 <body>
    <header class="cabecalho">
@@ -45,7 +44,7 @@
                 <form class="compra">
                     <label for="quantidade">Quantidade:</label>
                     <input id="quantidade" name="quantidade" type="number" value="1" min="1" max="100" required>
-                    <button type="button" class="botao">Adicionar ao carrinho</button>
+                    <button type="button" class="botao" id="adicionar-carrinho" data-id="morango1l" data-nome="Sorvete de Morango 1L" data-preco="29.90"  data-imagem="../imagens/morango1l.png">Adicionar ao carrinho</button>
                 </form>
             </div>
             
@@ -69,5 +68,12 @@
 
         <a class="botao" href="../Trabalhe.html">Trabalhe Conosco</a>
     </footer>
+
+    <div id="mensagem-carrinho">
+        Produto adicionado ao carrinho!
+    </div>
+
+    <script src="../../js/script.js"></script>
+
 </body>
 </html>
