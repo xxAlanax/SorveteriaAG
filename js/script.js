@@ -93,7 +93,10 @@ function mostrarCarrinho() {
                 <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
             </div>
 
-            <button type=button class=botao onclick="removerProduto(${indice})">Remover</button>
+            <div class="quantidade">
+                <button type=button class=botao onclick="diminuir(${indice})">-</button>
+                <button type=button class=botao onclick="aumentar(${indice})">+</button>
+            </div>
         </div>
         `;
 
@@ -124,8 +127,20 @@ mostrarPedido();
 
 // Remover produto
 
-function removerProduto(indice) {
-    carrinho.splice(indice, 1);
+function diminuir(indice) {
+    if (carrinho[indice].quantidade > 1) {
+        carrinho[indice].quantidade--;
+    } else {
+        carrinho.splice(indice, 1);
+    }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    mostrarCarrinho();
+}
+
+function aumentar(indice) {
+    carrinho[indice].quantidade++;
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
